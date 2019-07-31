@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0,width=device-width">
+  <title>Gamble</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="gamble.css" rel="stylesheet">
+</head>
+<body>
+  <div class="deck" id="deck">
+    <div class="card" id="cardA">A</div>
+    <div class="card" id="cardB">B</div>
+    <div class="card" id="cardC">C</div>
+    <div class="card" id="cardD">D</div>
+    <div class="card" id="cardE">E</div>
+  </div>
+  <div class="layout">
+    <div class="container">
+      <div class="hidden" id="sliderContainer">
+        <span class="slidervalue" id="sliderVal">Bet: 10</span>
+        <input type="range" class="slider" min="1" max="100" value="1" id="slider">
+        <button class="button" id="buttonPlay">Play</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="funds" id="fundsVal">90</div>
+    </div>
+    <div class="container">
+      <div class="messages" id="messages">
+      </div>
+    </div>
+  </div>
+  <script src="gamble-0.0.2.js"></script>
+</body>
